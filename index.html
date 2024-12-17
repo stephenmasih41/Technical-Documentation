@@ -8,61 +8,115 @@
 </head>
 <body>
   <nav id="navbar">
-    <header>iPhone User Guide</header>
+    <header>Python Documentation</header>
     <ul>
-      <li id="Welcome">Welcome</li>
-      <hr>
-      <li id="Basics">Basics</li>
-      <hr>
-      <li id="Apple-Intelligence">Apple Intelligence</li>
-      <hr>
-      <li id="Accessories">Accessories</li>
-      <hr>
-      <li id="Carplay">Carplay</li>
+      <li><a href="#Welcome" class="nav-link">What is Python?</a></li>
+      <li><a href="#Variables" class="nav-link">Variables</a></li>
+      <li><a href="#Variable_Names" class="nav-link">Variable Names</a></li>
+      <li><a href="#Multiple_Variables" class="nav-link">Multiple Variables</a></li>
+      <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
     </ul>
+  <br>
   </nav>
   <main id="main-doc">
     <section class="main-section"  id="Welcome">
-      <header>Welcome</header>
-      <h3>Get Started</h3>
-      <p>Set up a few basic features before you start using your new iPhone.</p>
-      <h3>Take your best shot</h3>
-      <p>Use your iPhone to capture the moment, wherever you are. Learn how to take photos and videos on the fly, and use other camera features on your iPhone.</p>
+      <header>What is Python?</header>
+      <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+      <p>It is used for:</p>
+      <ul>
+        <li>web development (server-side),</li>
+        <li>software development,</li>
+        <li>mathematics,</li>
+        <li>system scripting.</li>
+      </ul>
+      <h3>What can Python do?</h3>
+      <ul>
+        <li>Python can be used on a server to create web applications.</li>
+        <li>Python can be used alongside software to create workflows</li>
+        <li>Python can connect to database systems. It can also read and modify files.</li>
+        <li>Python can be used to handle big data and perform complex mathematics.</li>
+        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+      </ul>
+      <h3>Examples:</h3>
+      <code>print("Hello, World!")<br></code>
+      <code>if 5 > 2: <br>
+  print("Five is greater than two!")</code>
+      <code><br>x = 5<br>
+y = "Hello, World!"<br></code>
+      <code>#This is a comment. <br>
+print("Hello, World!")</code><br>
+      <code>#print("Hello, World!")<br>
+print("Cheers, Mate!")<br></code>
+<br>
     </section>
-    <section class="main-section"  id="Basics">
-      <header>Basics</header>
-      <h3>Open Apps on Iphone</h3>
-      <ol>
-        <li>To go to the Home Screen, swipe up from the bottom edge of the screen (on an iPhone with Face ID) or press the Home button (on an iPhone with a Home button).</li>
-        <li>Swipe left to browse apps on other Home Screen pages.</li>
-        <li>Swipe left past all your Home Screen pages to see App Library, where your apps are organized by category.</li>
-        <li>To open an app, tap its icon.</li>
-        <li>To return to App Library, swipe up from the bottom edge of the screen (on an iPhone with Face ID) or press the Home button (on an iPhone with a Home button).</li>
-      </ol>
+    <section class="main-section"  id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values.</p>
+      <h3>Creating Variables</h3>
+      <p>Python has no command for declaring a variable.</p>
+      <p>A variable is created the moment you first assign a value to it.</p>
+      <code>x = 5 <br></code>
+      <code>y = "John" <br></code>
+      <code>print(x) <br></code>
+      <code>print(y) <br></code>
+      <code>print(x+y) <br></code> <!--Addition-->
+      <br>
     </section>
-    <section class="main-section" id="Apple-Intelligence">
-      <header>Apple Intelligence</header>
-      <h3>Use Apple Intelligence in Messages on iPhone</h3>
-      <p>Apple Intelligence* allows you to get through your messages even faster with summaries that show you the key points of each conversation, and Smart Reply, which helps you quickly craft a response.</p>
-      <p>Note: Apple Intelligence is available in iOS 18.1 or later on all iPhone 16 models, iPhone 15 Pro, and iPhone 15 Pro Max. To check whether Apple Intelligence is available for your device and language, see the Apple Support article Apple Intelligence requirements.</p>
-      <h3>Turn message summaries on or off</h3>
-      <p>When you turn on Apple Intelligence, summaries automatically appear under your message conversations. You can turn off summaries if you want to see the most recent message in each conversation instead.</p>
+    <section class="main-section" id="Variable_Names">
+      <header>Variable Names</header>
+      <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+      <ul>
+        <li>A variable name must start with a letter or the underscore character</li>
+        <li>A variable name cannot start with a number</li>
+        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+        <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+        <li>A variable name cannot be any of the Python keywords.</li>
+      </ul>
+      <p>Legal variable names: </p>
+      <code>myvar = "John" <br></code>
+      <code>my_var = "John" <br></code>
+      <code>_my_var = "John" <br></code>
+      <code>myVar = "John" <br></code>
+      <code>MYVAR = "John" <br></code>
+      <code>myvar2 = "John"
+ <br></code>
     </section>
-    <section class="main-section"  id="Accessories">
-      <header>Accessories</header>
-      <h3>Pair Magic Keyboard with iPhone</h3>
-      <p>You can use Magic Keyboard, including Magic Keyboard with Numeric Keypad, to enter text on iPhone. Magic Keyboard connects to iPhone using Bluetooth®.</p>
-      <h3>Reconnect Magic Keyboard to iPhone</h3>
-      <p>Magic Keyboard disconnects when you turn its switch to Off or when you move it or iPhone out of Bluetooth range—about 33 feet (10 meters).</p>
-      <p>To reconnect, turn the keyboard switch to On, or bring the keyboard and iPhone back into range, then tap any key.</p>
+    <section class="main-section"  id="Multiple_Variables">
+      <header>Multiple Variables</header>
+      <p>Python allows you to assign values to multiple variables in one line:</p>
+      <h3>Unpack a Collection</h3>
+      <p>If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables. This is called unpacking.</p>
+      <p>Unpack a list:</p>
+      <code>fruits = ["apple", "banana", "cherry"] <br></code>
+      <code>x, y, z = fruits
+ <br></code>
+      <code>print(x) <br></code>
+      <code>print(y) <br></code>
+      <code>print(z) <br></code>
+      <br>
     </section>
-    <section class="main-section"  id="CarPlay">
-      <header>CarPlay</header>
-      <h3>Play music with CarPlay</h3>
-      <p>Use Siri or open Music in CarPlay to play music that’s available on your iPhone—including songs, artists, albums, playlists, and Radio.</p>
-      <p>If Siri doesn’t find what you asked for, be more specific. For example, say “Play the radio station ‘Pure Pop’” rather than saying “Play ‘Pure Pop.’”</p>
-      <p>You can also use the controls on your vehicle’s steering wheel, buttons on the Now Playing screen, and CarPlay Dashboard to control music playback.</p>
+    <section class="main-section"  id="Data_Types">
+      <header>Data Types</header>
+      <p>In programming, data type is an important concept.</p>
+      <p>Variables can store data of different types, and different types can do different things.</p>
+      <p>Python has the following data types built-in by default, in these categories:</p>
     </section>
+    <ul>
+      <li>
+Text Type:	str</li>
+      <li>Numeric Types:	int, float, complex</li>
+      <li>Sequence Types:	list, tuple, range</li>
+      <li>Mapping Type:	dict</li>
+      <li>Set Types:	set, frozenset</li>
+      <li>Boolean Type:	bool</li>
+      <li>Binary Types:	bytes, bytearray, memoryview</li>
+      <li>None Type:	NoneType</li>
+    </ul>
+    <code>x = "Hello World" <br></code>
+    <code>x = 20 <br></code>
+    <code>x = 20.5 <br></code>
+    <code>x = 1j <br></code>
+    <code>print(type(x)) <br></code>
   </main>
 </body>
 </html>
